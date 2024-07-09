@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: discovery-eureka
+
+server:
+  port: 8765
+  servlet:
+    context-path: /discovery/eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
